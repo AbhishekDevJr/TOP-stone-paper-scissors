@@ -54,9 +54,35 @@ function playRound (playerChoice, computerSelection){
     }
 }
 
+// Event Listener for Rock
+const rockButton = document.querySelector('.rock');
+console.log(rockButton);
+rockButton.addEventListener('click', () => {
+    playRound('rock', getComputerChoice());
+    return;
+});
+
+//Event Listener for Paper
+const paperButton = document.querySelector('.paper');
+console.log(paperButton);
+paperButton.addEventListener('click', () => {
+    playRound('paper', getComputerChoice());
+    return;
+});
+
+//Event Listener for Scissors
+const scissorsButton = document.querySelector('.scissors');
+console.log(scissorsButton);
+scissorsButton.addEventListener('click', () => {
+    playRound('scissors', getComputerChoice());
+    return;
+});
+
+
+
 //The Function thats resonsible for the Actual Game of 5 rounds of Rock-Paper-Scissors
 
-function game(){
+/*function game(){
     let userScore = 0;
     let comScore = 0;
     for(let i = 0; i < 5; i++){
@@ -90,6 +116,6 @@ function game(){
     else{
         console.log("The game ends in a Draw! Your score = " + userScore + " Computer's score = " + comScore);
     }
-}
+}*/
 
-game();
+//game();
