@@ -4,20 +4,22 @@
         <meta charset = "UTF-8">
         <meta http-equiv = "X-UA-Compatible">
         <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet">
         <link rel = "stylesheet" href = "style.css">
         <title>Stone-Paper-Scissors</title>
         <script type = "text/javascript" defer src = "script.js"></script>
     </head>
     <body>
-        <a href = "#" onClick = "handleClick()"><h1>Click me to check external JS File!</h1></a>
+        <h1 class = "body-h1">Welcome to Stone-Paper-Scissors Game</h1>
         
         <div class = "selection-buttons">
             <button class = "rock">Rock</button>
             <button class = "paper">Paper</button>
             <button class = "scissors">Scissors</button>
+            <button class = "refresh-button">Restart Game</button>
         </div>
 
-        <div class = "score-round">
+    <div class = "game-record-div" ><div class = "score-round">
             <h1 class = "score-round-h1"></h1>
         </div>
 
@@ -29,6 +31,8 @@
         <div class = "final-scores">
             <h1 class = "final-score-dec"></h1>
             <h1 class = "final-winner-dec"></h1>
-        </div>
+            <h1 class = "restart-message-div"></h1>
+        </div> 
+    </div>
     </body>
 </html>
