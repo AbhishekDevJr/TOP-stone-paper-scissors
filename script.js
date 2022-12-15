@@ -59,12 +59,16 @@ function playRound (playerChoice, computerSelection){
     }
 }
 
+<<<<<<< HEAD
 //Event Listerner for Reload Button
 const reloadButton = document.querySelector('.refresh-button');
 reloadButton.addEventListener('click', () => {
     window.location.reload();
     return;
 });
+=======
+
+>>>>>>> 61663614f25ec7cb0aca05aff65b4f65b0273480
 
 //Event Listener for Rock
 const rockButton = document.querySelector('.rock');
@@ -156,6 +160,7 @@ function game(userChoiceVar){
                 const finalWinnerH1 = document.querySelector('.final-winner-dec');
                 finalWinnerH1.textContent = "Congratulations You are the Winner!";
 
+<<<<<<< HEAD
                 const restartMessage = document.querySelector('.restart-message-div');
                 restartMessage.textContent = 'Please hit "Restart Game" to play again';
 
@@ -167,14 +172,19 @@ function game(userChoiceVar){
                 finalWinnerH1.textContent = "The Game ends in a Draw.";
                 const restartMessage = document.querySelector('.restart-message-div');
                 restartMessage.textContent = 'Please hit "Restart Game" to play again';
+=======
+>>>>>>> 61663614f25ec7cb0aca05aff65b4f65b0273480
             }
             else{
                 const finalScoreH1 = document.querySelector('.final-score-dec');
                 finalScoreH1.textContent = "You :- " + userScore + " Computer :- " + comScore;
                 const finalWinnerH1 = document.querySelector('.final-winner-dec');
                 finalWinnerH1.textContent = "Sorry! You lose, better luck next time!";
+<<<<<<< HEAD
                 const restartMessage = document.querySelector('.restart-message-div');
                 restartMessage.textContent = 'Please hit "Restart Game" to play again';
+=======
+>>>>>>> 61663614f25ec7cb0aca05aff65b4f65b0273480
             }
         }
     /*if(userScore > comScore){
